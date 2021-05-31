@@ -1,0 +1,64 @@
+body{
+  background-color: #7ea4b3;
+}
+
+button{
+  background-color: #7ea4b3;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  width: 90px;
+  height: 35px;
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+#quote-box{
+  background-color: white;
+  position: relative;
+  width: 30%;
+  padding: 40px 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px black;
+}
+
+#quote-container[fadedown='1']{
+  display: flex;
+  position: relative;
+  opacity: 1.0;
+  animation: fadedown 1s;
+}
+
+#misc-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+#text{
+  color: #7ea4b3;
+}
+
+#author{
+  text-align: right;
+  color: #7ea4b3;
+}
+
+#quote-icon{
+  color: #7ea4b3;
+}
+
+#twitter-icon{
+  color: #7ea4b3;
+  font-size: 30px;
+  filter: drop-shadow(2px 2px black);
+}
+
+@keyframes fadedown
+{
+    from {bottom: 50px; opacity: 0.0;}
+    to {bottom: 0px; opacity: 1.0;}
+}
